@@ -1,0 +1,8 @@
+# set your bucket name
+export S3_BUCKET_NAME=my_bucket
+# set your aws region
+export AWS_REGION=ap-northeast-1
+# set your aws access key id which can has s3 access permission
+export AWS_ACCESS_KEY_ID=AAAAAAAAAAAAAAAAAAAA
+# set your aws secret access key id which can has s3 access permission
+export AWS_SECRET_ACCESS_KEY=1111aaaaBBBB2222ccccDDDD3333eeeeFFFF4444

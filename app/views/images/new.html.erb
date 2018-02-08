@@ -1,0 +1,6 @@
+<%= form_for(@image) do |f| %>
+  <%= f.file_field :file, accept: "image/jpeg" %>
+  <%= f.check_box :S3 %>
+  <%= label_tag :S3, 'upload to AMAZON S3' %>
+  <%= f.submit "upload" %>
+<% end %>
