@@ -1,1 +1,8 @@
-<%= link_to 'アップロード', 'images/new' %>
+<%= link_to 'アップロード', :controller => 'images', :action => 'new' %>
+<% Image.all.each do |image| %>
+  <p>
+    <%= image.id %>
+    S3:<%= image.S3 %>
+    <%= link_to image.filename, "images/show_image?id=#{image.id}",data: { no_turbolink: true } %>
+  </p>
+<% end %>

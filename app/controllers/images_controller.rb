@@ -30,7 +30,7 @@ class ImagesController < ApplicationController
     if @image.save
       flash[:success] = "画像を保存しました！"
       p @image
-      # redirect_to @image
+      redirect_to "/"
     else
       flash[:error] = "画像を保存できませんでした.."
     end
